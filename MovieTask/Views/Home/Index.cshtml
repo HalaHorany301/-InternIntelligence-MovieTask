@@ -12,9 +12,9 @@
 <section class="movies">
     @foreach (var movie in Model.MovieList)
     {
-        <div class="movie-card" style="width:28%" onclick="window.location.href='/Home/MovieDetail?movieId=@movie.Id'">
+        <div class="movie-card" onclick="window.location.href='/Home/MovieDetail?movieId=@movie.Id'">
             <div class="movie-image">
-                <img src="/Uploads/@movie.MovieImage" >
+                <img  src="/Uploads/@movie.MovieImage" >
             </div>
             <div class="movie-info">
                 <h4>@movie.Title</h4>
